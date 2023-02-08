@@ -37,3 +37,19 @@ docker build \
   -f jupyterlab.Dockerfile \
   -t jupyterlab .
 ```
+
+# To start the cluster
+
+Start the cluster in detached mode to get back the terminal.
+
+```
+docker-compose up -d
+```
+
+# Access
+You can access:
+1. Spark Master at localhost:8080
+2. Spark Worker at localhost:8081
+2. JupyterLab notebooks at localhost:8888
+
+You can change the port by editing the corresponding Dockerfile contents.
